@@ -1,0 +1,199 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!--    <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">h1.title</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div> -->
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+              <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+<!--
+<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+-->
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="bootstrap-iso">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="">
+    <form method="post">
+      <!-- brief text -->
+     <div class="form-group ">
+      <label class="control-label " for="text">
+       Short Text
+      </label>
+      <input class="form-control" id="text" name="text" type="text"/>
+      <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+     </div>
+     <!-- long text -->
+     <div class="form-group ">
+      <label class="control-label " for="textarea">
+       Paragraph
+      </label>
+      <textarea class="form-control" cols="40" id="textarea" name="textarea" rows="5"></textarea>
+      <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+     </div>
+     <!-- dropdown: single-selection -->
+     <div class="form-group ">
+      <label class="control-label " for="select">
+       Dropdown (Single Selection)
+      </label>
+      <select class="select form-control" id="select" name="select">
+       <option value="First Choice">
+        First Choice
+       </option>
+       <option value="Second Choice">
+        Second Choice
+       </option>
+       <option value="Third Choice">
+        Third Choice
+       </option>
+      </select>
+      <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+     </div>
+        <!-- list: multiple selections -->
+     <div class="form-group ">
+      <label class="control-label " for="text">
+       Multi-Select
+      </label>
+     <select multiple class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+</div>
+  <!--   <div class="form-group ">
+      <label class="control-label ">
+       Select a Choice
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="radio" type="radio" value="First Choice"/>
+         First Choice
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="radio" type="radio" value="Second Choice"/>
+         Second Choice
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="radio" type="radio" value="Third Choice"/>
+         Third Choice
+        </label>
+       </div>
+      </div>
+    </div>-->
+    <!-- checkbox-->
+     <div class="form-group ">
+      <label class="control-label ">
+       Checkbox (multiple)
+      </label>
+      <div class=" ">
+       <div class="checkbox">
+        <label class="checkbox">
+         <input name="checkbox" type="checkbox" value="First Choice"/>
+         First Choice
+        </label>
+       </div>
+       <div class="checkbox">
+        <label class="checkbox">
+         <input name="checkbox" type="checkbox" value="Second Choice"/>
+         Second Choice
+        </label>
+       </div>
+       <div class="checkbox">
+        <label class="checkbox">
+         <input name="checkbox" type="checkbox" value="Third Choice"/>
+         Third Choice
+        </label>
+       </div>
+      </div>
+      <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+     </div>
+     <!-- url -->
+     <div class="form-group ">
+      <label class="control-label " for="url">
+       URI
+      </label>
+      <input class="form-control" id="url" name="url" type="text" placeholder="validate as a full URI"/>
+      <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="date">
+       Date
+      </label>
+      <input class="form-control" id="date" name="date" placeholder="EDTF: YYYY or YYYYY-MM or YYYY-MM-DD or date1/date2 or XXXX" type="text"/>
+<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+     </div>
+
+  <!--   <div class="form-group">
+      <div>
+       <button class="btn btn-primary " name="submit" type="submit">
+        Submit
+       </button>
+      </div>
+    </div>-->
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+<!--
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>footer</h3>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script> -->
+
+
+    </body>
+</html>
